@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Open+Sans&display=swap');
+
+:root {
+    --white: #fff;
+    --black: #000;
+    --green: #3d656a;
+    --lightGray: #d0cdcd;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,h2,h3,h4 {
+    font-family: 'Domine', serif;
+}
+
+/*************
+Header
+*************/
+header {
+    background-image: url(assets/img/bg-mobile-fallback.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+header .row {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+header .row .col-md-8 {
+    background-color: var(--black);
+    color: var(--white);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 400px;
+    clip-path: polygon(0% 0%, 100% 0%, 85% 100%, 0% 100%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
