@@ -3,7 +3,7 @@
 :root {
     --white: #fff;
     --black: #000;
-    --green: rgb(61, 101, 106);
+    --green: #2a5555;
     --lightGray: #d0cdcd;
 }
 
@@ -18,6 +18,18 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+body:before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--green);
+  opacity: 0.7;
+  z-index: 1;
+}
+
 h1,h2,h3,h4 {
     font-family: 'Domine', serif;
 }
@@ -28,40 +40,25 @@ Video
 
 #myVideo {
     position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1;
-}
-
-#myVideo::before {
-    content: "";
-    display: block;
-    background-image: linear-gradient(rgba(61, 101, 106,.7),rgba(61, 101, 106,.7));
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 2;
     top: 0;
     left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -10;
 }
-
 
 /*************
 Header
 *************/
-header {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-}
 
 header .row {
     height: 100vh;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
 }
 
 header .row .col-md-8 {
@@ -72,7 +69,7 @@ header .row .col-md-8 {
     flex-direction: column;
     justify-content: center;
     padding: 0 450px 0 350px;
-    clip-path: polygon(0% 0%, 100% 0%, 85% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 98% 0%, 85% 100%, 0% 100%);
 }
 
 header .row .col-md-8 h1 {
